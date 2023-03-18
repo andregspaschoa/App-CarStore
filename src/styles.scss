@@ -1,0 +1,17 @@
+$background-color: #252525 !important;
+$font-color: #fff !important;
+
+body {
+  background-image: url("./assets/pexels-maria-geller-2127039.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.ui-card {
+  background-color: $background-color;
+  color: $font-color;
+}
+.text-center {
+  text-align: center;
+}
