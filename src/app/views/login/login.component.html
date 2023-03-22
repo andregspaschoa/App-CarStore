@@ -9,14 +9,15 @@
         </div>
         <div class="col-12">
           <label for="float-input">Usuário: </label>
-          <input class="col-12" type="text" pInputText />
+          <input [(ngModel)]="requestLogin.login" class="col-12" type="text" pInputText />
         </div>
         <div class="col-12">
           <label for="float-input">Senha: </label>
-          <input class="col-12" type="password" pPassword />
+          <input [(ngModel)]="requestLogin.password" class="col-12" type="password" pPassword />
         </div>
         <div class="col-12">
           <button class="col-12 p-button "
+            (click)="doLogin()"
             pButton
             type="button"
             label="Entrar"
